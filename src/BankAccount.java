@@ -17,6 +17,18 @@ public class BankAccount {
     public void setAccountHolder(String name ){
         accountHolder = name;
     }
-
+    public double getAccountValue(){
+        return accountValue;
+    }
+    // change account Value
+    public void setAccountValue(double ValueInput ){
+        accountValue = ValueInput;
+    }
+    // change account Value
+    public void deposit(double amount){
+        System.out.println("Depositing: $ " + amount);
+        accountValue += amount;
+        System.out.println("Account value is now: " + getAccountValue());
+    }
 
 }

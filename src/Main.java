@@ -8,5 +8,11 @@ public class Main {
 
         account.setAccountHolder("Tewabe");
         System.out.println("Your Account Name is " + account.getAccountHolder());
+
+        account.setAccountValue(99.99);
+        System.out.println("Your Account Value is " + account.getAccountValue());
+
+        account.deposit(199.99);
+        System.out.println("Your Account Value is " + account.getAccountValue());
     }
 }

@@ -14,5 +14,8 @@ public class Main {
 
         account.deposit(199.99);
         System.out.println("Your Account Value is " + account.getAccountValue());
+
+        account.withdraw(9.99);
+        System.out.println("Your Account Value is " + account.getAccountValue());
     }
 }

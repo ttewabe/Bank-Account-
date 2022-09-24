@@ -24,10 +24,16 @@ public class BankAccount {
     public void setAccountValue(double ValueInput ){
         accountValue = ValueInput;
     }
-    // change account Value
+    // add funds to account
     public void deposit(double amount){
         System.out.println("Depositing: $ " + amount);
         accountValue += amount;
+        System.out.println("Account value is now: " + getAccountValue());
+    }
+// remove funds from account
+    public void withdraw(double amount){
+        System.out.println("Withdrawing: $ " + amount);
+        accountValue -= amount;
         System.out.println("Account value is now: " + getAccountValue());
     }
 
